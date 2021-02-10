@@ -1,0 +1,13 @@
+node ./api/index.js
+
+sudo mysql -u root -p;
+CREATE USER 'adriane'@'localhost' IDENTIFIED BY '123456';
+GRANT ALL PRIVILEGES ON * . * TO 'adriane'@'localhost';
+select user from mysql.user;
+
+
+/etc/init.d/mysql start
+
+use escola_ingles;
+show tables;
+describe Pessoas;
